@@ -3,7 +3,7 @@ import ShuffleOutlinedIcon from "@mui/icons-material/ShuffleOutlined";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
-import PauseCircleFilledIcon from '@mui/icons-material/PauseCircleFilled';
+import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import { Grid, Slider } from "@mui/material";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
@@ -89,25 +89,29 @@ function Footer({ spotify }) {
           </div>
         ) : (
           <div className="footer__songInfo">
-            <h4>No song is playing yeahhhh</h4>
+            <h4>Nothing is playing yet</h4>
             <p>...</p>
           </div>
         )}
       </div>
       <div className="footer_center">
-        <ShuffleOutlinedIcon fontSize='medium' className="footer_green" />
-        <SkipPreviousIcon fontSize='medium' onClick={skipPrevious} className="footer_icon" />
+        <ShuffleOutlinedIcon fontSize="medium" className="footer_green" />
+        <SkipPreviousIcon
+          fontSize="medium"
+          onClick={skipPrevious}
+          className="footer_icon"
+        />
         {playing ? (
           <PauseCircleFilledIcon
             onClick={handlePlayPause}
             fontSize="large"
-            className="footer__icon"
+            className="footer_icon"
           />
         ) : (
           <PlayCircleFilledIcon
             onClick={handlePlayPause}
             fontSize="large"
-            className="footer__icon"
+            className="footer_icon"
           />
         )}
         <SkipNextIcon onClick={skipNext} className="footer_icon" />
@@ -116,10 +120,10 @@ function Footer({ spotify }) {
       <div className="footer_right">
         <Grid container spacing={2}>
           <Grid item>
-            <PlaylistPlayIcon />
+            <PlaylistPlayIcon fontSize="large" />
           </Grid>
           <Grid item>
-            <VolumeDownIcon />
+            <VolumeDownIcon fontSize="large"/>
           </Grid>
           <Grid item xs>
             <Slider
