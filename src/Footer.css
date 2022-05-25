@@ -3,7 +3,7 @@
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    height: 65px;
+    height: 85px;
     width: 97%;
     background-color: #282828;
     padding: 20px;
@@ -15,11 +15,12 @@
     align-items: center;
     color: white;
     width: 300px;
+    font-size: 18px;
 }
 
 .footer_albumLogo {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin-right: 20px;
     object-fit: contain;
 }
@@ -44,6 +45,8 @@
 
 .footer_green {
     color: #1ed15e;
+    transform: scale(1.2);
+
 }
 
 .footer_songInfo>h4 {
@@ -51,15 +54,20 @@
 }
 
 .footer_songInfo>p {
-    font-size: 12px;
+    font-size: 24px;
 }
 
 .footer_icon:hover,
 .footer_green:hover {
     transition: transform 0.2s ease-in-out;
-    transform: scale(1.2) !important;
+    transform: scale(1.5) !important;
 }
 
 .footer__right * .MuiSlider-root {
     color: green;
+}
+
+.footer_icon {
+    transform: scale(1.8);
+
 }

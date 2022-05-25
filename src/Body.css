@@ -5,6 +5,7 @@
     color: white;
     padding: 30px;
     overflow-y: overlay;
+    width: 100%;
 }
 
 .body::-webkit-scrollbar {
@@ -27,7 +28,7 @@
 }
 
 .body_infoText>p {
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .body_info>img {
