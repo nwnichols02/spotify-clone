@@ -1,9 +1,10 @@
 import './Body.css'
+import Header from './Header';
 
-function Body () {
+function Body ({spotify}) {
     return (
         <div className='body'>
-            <h1>im body</h1>
+            <Header spotify={spotify}/>
         </div>
     )
 }
